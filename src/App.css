@@ -1,0 +1,86 @@
+/* Establecer el fondo azul para toda la pantalla */
+html, body {
+  height: 100%; /* Asegura que el body ocupe toda la altura del navegador */
+  margin: 0; /* Elimina los márgenes por defecto */
+  background-color: #bbdefb; /* Fondo azul claro */
+  font-family: 'Roboto', sans-serif; /* Fuente del cuerpo */
+}
+
+/* Contenedor principal */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupar toda la altura de la ventana */
+}
+
+/* Resto de estilos permanece igual */
+.content {
+  text-align: center;
+  background-color: #e1f5fe; /* Fondo azul claro para el contenido */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados */
+h1 {
+  color: #0288d1;
+  font-size: 36px;
+  background: linear-gradient(90deg, #00aaff, #00ff88);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  color: #0288d1;
+}
+
+/* Estilo de los botones */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #1e88e5;
+}
+
+/* Estilos para los mensajes de estado */
+.cargando {
+  color: #f39c12;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Contenedor de información de viaje */
+.contenedor-mensajes {
+  background-color: #b3e5fc; /* Fondo celeste suave */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Texto en el contenedor de mensajes */
+.contenedor-mensajes h2 {
+  color: #0288d1;
+}
+
+.contenedor-mensajes p {
+  color: #00796b;
+}
